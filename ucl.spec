@@ -2,12 +2,12 @@ Summary:	Portable lossless data compression library
 Summary(de):	Library für die Komprimierung
 Summary(pl):	Biblioteka bezstratnej kompresji
 Name:		ucl
-Version:	1.02
-Release:	2
+Version:	1.03
+Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://www.oberhumer.com/opensource/ucl/download/%{name}-%{version}.tar.gz
-# Source0-md5:	e35efd120104c522acfd0e1a5c3ec091
+# Source0-md5:	852bd691d8abc75b52053465846fba34
 URL:		http://www.oberhumer.com/opensource/ucl/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,7 +27,7 @@ Summary:	header files and libraries for ucl development
 Summary(de):	Headerdateien und Libraries für ucl-Entwicklung
 Summary(pl):	Pliki nag³ówkowe i dokumentacja do ucl
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This package contains the header files needed to develop programs that
@@ -45,7 +45,7 @@ tworzeniu w³asnych programów wykorzystuj±cych ucl.
 Summary:	Static library for ucl development
 Summary(pl):	Biblioteka statyczna do ucl
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 This package contains the header files and libraries needed to develop
