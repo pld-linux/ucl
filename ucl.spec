@@ -6,13 +6,6 @@ Version:	0.92
 Release:	2
 License:	GPL
 Group:		Libraries
-Group(de):	Libraries
-Group(es):	Bibliotecas
-Group(fr):	Librairies
-Group(pl):	Biblioteki
-Group(pt_BR):	Bibliotecas
-Group(ru):	Библиотеки
-Group(uk):	Б╕бл╕отеки
 Source0:	http://wildsau.idv.uni-linz.ac.at/mfx/download/ucl/%{name}-%{version}.tar.gz
 URL:		http://wildsau.idv.uni-linz.ac.at/mfx/ucl.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,13 +26,6 @@ Summary:	header files and libraries for ucl development
 Summary(de):	Headerdateien und Libraries fЭr ucl-Entwicklung 
 Summary(pl):	Pliki nagЁСwkowe i dokumentacja do ucl
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
@@ -58,13 +44,6 @@ tworzeniu wЁasnych programСw wykorzystuj╠cych ucl.
 Summary:	Static library for ucl development
 Summary(pl):	Biblioteka statyczna do ucl
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
