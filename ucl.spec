@@ -67,16 +67,15 @@ w³asnych programów wykorzystuj±cych ucl.
 %setup -q
 
 %build
-./configure \
-	--prefix=%{_prefix} \
+%configure \
 	--enable-shared 
 
 %{__make} 
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_includedir},%{_libdir},%{_mandir}/man3}
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf NEWS README THANKS TODO 
 
@@ -92,12 +91,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc {NEWS,README,THANKS,TODO}.gz
+%doc *.gz
 %attr(755,root,root) %{_libdir}/lib*.so
-
-%{_includedir}/*
+%attr(755,root,root) %{_libdir}/lib*.la
+%{_includedir}/ucl
 
 %files static
 %defattr(644,root,root,755)
 %{_libdir}/lib*.a
-%{_libdir}/lib*.la
