@@ -7,6 +7,7 @@ Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://www.oberhumer.com/opensource/ucl/download/%{name}-%{version}.tar.gz
+# Source0-md5:	1152323cd54eee905b3a9423ff43c373
 URL:		http://www.oberhumer.com/opensource/ucl/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
