@@ -2,7 +2,7 @@ Summary:	Portable lossless data compression library
 Summary(de):	Library für die Komprimierung  
 Summary(pl):	Biblioteka bezstratnej kompresji
 Name:		ucl
-Version:	0.91
+Version:	0.92
 Release:	2
 License:	GPL
 Group:		Libraries
