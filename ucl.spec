@@ -3,7 +3,7 @@ Summary(de):	Library für die Komprimierung
 Summary(pl):	Biblioteka bezstratnej kompresji
 Name:		ucl
 Version:	0.92
-Release:	2
+Release:	1
 License:	GPL
 Group:		Libraries
 Group(de):	Libraries
