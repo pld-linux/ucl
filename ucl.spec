@@ -1,5 +1,5 @@
 Summary:	Portable lossless data compression library
-Summary(de):	Library für die Komprimierung  
+Summary(de):	Library für die Komprimierung
 Summary(pl):	Biblioteka bezstratnej kompresji
 Name:		ucl
 Version:	0.92
@@ -23,7 +23,7 @@ Dekompresja nie wymaga dodatkowej pamiêci.
 
 %package devel
 Summary:	header files and libraries for ucl development
-Summary(de):	Headerdateien und Libraries für ucl-Entwicklung 
+Summary(de):	Headerdateien und Libraries für ucl-Entwicklung
 Summary(pl):	Pliki nag³ówkowe i dokumentacja do ucl
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
@@ -32,11 +32,11 @@ Requires:	%{name} = %{version}
 This package contains the header files needed to develop programs that
 use these ucl.
 
-%description -l de devel
+%description devel -l de
 Dieses Paket enthält die Header-Dateien und Libraries, die zur
 Entwicklung von Programmen benötigt werden, die diese ucl einsetzen.
 
-%description -l pl devel
+%description devel -l pl
 Pakiet ten zawiera pliki nag³owkowe i dokumentacjê potrzebn± przy
 tworzeniu w³asnych programów wykorzystuj±cych ucl.
 
@@ -50,7 +50,7 @@ Requires:	%{name}-devel = %{version}
 This package contains the header files and libraries needed to develop
 programs that use these ucl.
 
-%description -l pl static
+%description static -l pl
 Pakiet ten zawiera bibliotekê statyczn± potrzebn± przy tworzeniu
 w³asnych programów wykorzystuj±cych ucl.
 
@@ -59,16 +59,16 @@ w³asnych programów wykorzystuj±cych ucl.
 
 %build
 %configure2_13 \
-	--enable-shared 
+	--enable-shared
 
-%{__make} 
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf NEWS README THANKS TODO 
+gzip -9nf NEWS README THANKS TODO
 
 %post   -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
