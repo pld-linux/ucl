@@ -18,7 +18,7 @@ excellent compression ratio while allowing *very* fast decompression.
 Decompression requires no additional memory.
 
 %description -l pl
-UCL jest przeno¶n± bibliotek± do kompresji napisan± w ANSI C. Oferje
+UCL jest przeno¶n± bibliotek± do kompresji napisan± w ANSI C. Oferuje
 doskona³y wspó³czynnik kompresji przy bardzo szybkiej dekompresji.
 Dekompresja nie wymaga dodatkowej pamiêci.
 
