@@ -7,8 +7,12 @@ Release:	2
 License:	GPL
 Group:		Libraries
 Group(de):	Libraries
+Group(es):	Bibliotecas
 Group(fr):	Librairies
 Group(pl):	Biblioteki
+Group(pt_BR):	Bibliotecas
+Group(ru):	‚…¬Ã…œ‘≈À…
+Group(uk):	‚¶¬Ã¶œ‘≈À…
 Source0:	http://wildsau.idv.uni-linz.ac.at/mfx/download/ucl/%{name}-%{version}.tar.gz
 URL:		http://wildsau.idv.uni-linz.ac.at/mfx/ucl.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -30,6 +34,7 @@ Summary(de):	Headerdateien und Libraries f¸r ucl-Entwicklung
 Summary(pl):	Pliki nag≥Ûwkowe i dokumentacja do ucl
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name} = %{version}
@@ -51,6 +56,7 @@ Summary:	Static library for ucl development
 Summary(pl):	Biblioteka statyczna do ucl
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name}-devel = %{version}
