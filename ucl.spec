@@ -2,12 +2,12 @@ Summary:	Portable lossless data compression library
 Summary(de):	Library für die Komprimierung
 Summary(pl):	Biblioteka bezstratnej kompresji
 Name:		ucl
-Version:	1.01
+Version:	1.02
 Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://www.oberhumer.com/opensource/ucl/download/%{name}-%{version}.tar.gz
-# Source0-md5:	1152323cd54eee905b3a9423ff43c373
+# Source0-md5:	e35efd120104c522acfd0e1a5c3ec091
 URL:		http://www.oberhumer.com/opensource/ucl/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -67,21 +67,22 @@ w³asnych programów wykorzystuj±cych ucl.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-%post   -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post   -p /sbin/ldconfig
+%postun -p /sbin/ldconfig
+
 %files
 %defattr(644,root,root,755)
+%doc NEWS README THANKS TODO
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%doc NEWS README THANKS TODO
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
 %{_includedir}/ucl
