@@ -9,6 +9,7 @@ Group:		Libraries
 Source0:	http://www.oberhumer.com/opensource/ucl/download/%{name}-%{version}.tar.gz
 # Source0-md5:	852bd691d8abc75b52053465846fba34
 URL:		http://www.oberhumer.com/opensource/ucl/
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
