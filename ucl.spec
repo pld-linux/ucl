@@ -3,7 +3,7 @@ Summary(de):	Library für die Komprimierung
 Summary(pl):	Biblioteka bezstratnej kompresji
 Name:		ucl
 Version:	0.92
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries
 Group(de):	Libraries
@@ -67,7 +67,7 @@ w³asnych programów wykorzystuj±cych ucl.
 %setup -q
 
 %build
-%configure \
+%configure2_13 \
 	--enable-shared 
 
 %{__make} 
