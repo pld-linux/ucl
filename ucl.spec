@@ -3,7 +3,7 @@ Summary(de):	Library für die Komprimierung
 Summary(pl):	Biblioteka bezstratnej kompresji
 Name:		ucl
 Version:	1.02
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	http://www.oberhumer.com/opensource/ucl/download/%{name}-%{version}.tar.gz
@@ -59,6 +59,7 @@ w³asnych programów wykorzystuj±cych ucl.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub acconfig
 %configure \
 	--enable-shared
 
