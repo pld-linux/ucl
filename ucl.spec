@@ -1,6 +1,6 @@
 Summary:	Portable lossless data compression library
-Summary(de.UTF-8):   Library für die Komprimierung
-Summary(pl.UTF-8):   Biblioteka bezstratnej kompresji
+Summary(de.UTF-8):	Library für die Komprimierung
+Summary(pl.UTF-8):	Biblioteka bezstratnej kompresji
 Name:		ucl
 Version:	1.03
 Release:	1
@@ -25,8 +25,8 @@ Dekompresja nie wymaga dodatkowej pamięci.
 
 %package devel
 Summary:	header files and libraries for ucl development
-Summary(de.UTF-8):   Headerdateien und Libraries für ucl-Entwicklung
-Summary(pl.UTF-8):   Pliki nagłówkowe i dokumentacja do ucl
+Summary(de.UTF-8):	Headerdateien und Libraries für ucl-Entwicklung
+Summary(pl.UTF-8):	Pliki nagłówkowe i dokumentacja do ucl
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -44,7 +44,7 @@ tworzeniu własnych programów wykorzystujących ucl.
 
 %package static
 Summary:	Static library for ucl development
-Summary(pl.UTF-8):   Biblioteka statyczna do ucl
+Summary(pl.UTF-8):	Biblioteka statyczna do ucl
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
