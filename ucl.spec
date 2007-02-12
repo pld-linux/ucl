@@ -1,6 +1,6 @@
 Summary:	Portable lossless data compression library
-Summary(de):	Library für die Komprimierung
-Summary(pl):	Biblioteka bezstratnej kompresji
+Summary(de.UTF-8):   Library fÃ¼r die Komprimierung
+Summary(pl.UTF-8):   Biblioteka bezstratnej kompresji
 Name:		ucl
 Version:	1.03
 Release:	1
@@ -18,15 +18,15 @@ UCL implements a number of compression algorithms that achieve an
 excellent compression ratio while allowing *very* fast decompression.
 Decompression requires no additional memory.
 
-%description -l pl
-UCL jest przeno¶n± bibliotek± do kompresji napisan± w ANSI C. Oferuje
-doskona³y wspó³czynnik kompresji przy bardzo szybkiej dekompresji.
-Dekompresja nie wymaga dodatkowej pamiêci.
+%description -l pl.UTF-8
+UCL jest przenoÅ›nÄ… bibliotekÄ… do kompresji napisanÄ… w ANSI C. Oferuje
+doskonaÅ‚y wspÃ³Å‚czynnik kompresji przy bardzo szybkiej dekompresji.
+Dekompresja nie wymaga dodatkowej pamiÄ™ci.
 
 %package devel
 Summary:	header files and libraries for ucl development
-Summary(de):	Headerdateien und Libraries für ucl-Entwicklung
-Summary(pl):	Pliki nag³ówkowe i dokumentacja do ucl
+Summary(de.UTF-8):   Headerdateien und Libraries fÃ¼r ucl-Entwicklung
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe i dokumentacja do ucl
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -34,17 +34,17 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the header files needed to develop programs that
 use these ucl.
 
-%description devel -l de
-Dieses Paket enthält die Header-Dateien und Libraries, die zur
-Entwicklung von Programmen benötigt werden, die diese ucl einsetzen.
+%description devel -l de.UTF-8
+Dieses Paket enthÃ¤lt die Header-Dateien und Libraries, die zur
+Entwicklung von Programmen benÃ¶tigt werden, die diese ucl einsetzen.
 
-%description devel -l pl
-Pakiet ten zawiera pliki nag³owkowe i dokumentacjê potrzebn± przy
-tworzeniu w³asnych programów wykorzystuj±cych ucl.
+%description devel -l pl.UTF-8
+Pakiet ten zawiera pliki nagÅ‚owkowe i dokumentacjÄ™ potrzebnÄ… przy
+tworzeniu wÅ‚asnych programÃ³w wykorzystujÄ…cych ucl.
 
 %package static
 Summary:	Static library for ucl development
-Summary(pl):	Biblioteka statyczna do ucl
+Summary(pl.UTF-8):   Biblioteka statyczna do ucl
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -52,9 +52,9 @@ Requires:	%{name}-devel = %{version}-%{release}
 This package contains the header files and libraries needed to develop
 programs that use these ucl.
 
-%description static -l pl
-Pakiet ten zawiera bibliotekê statyczn± potrzebn± przy tworzeniu
-w³asnych programów wykorzystuj±cych ucl.
+%description static -l pl.UTF-8
+Pakiet ten zawiera bibliotekÄ™ statycznÄ… potrzebnÄ… przy tworzeniu
+wÅ‚asnych programÃ³w wykorzystujÄ…cych ucl.
 
 %prep
 %setup -q
