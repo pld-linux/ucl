@@ -3,7 +3,7 @@ Summary(de.UTF-8):	Library für die Komprimierung
 Summary(pl.UTF-8):	Biblioteka bezstratnej kompresji
 Name:		ucl
 Version:	1.03
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	http://www.oberhumer.com/opensource/ucl/download/%{name}-%{version}.tar.gz
